@@ -1,0 +1,64 @@
+.header{
+    display: flex;
+    margin-top: 6px;
+}
+
+.cart-logo{
+    width: 35px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.left-section{
+    width: 300px;
+    padding-left: 10px;
+}
+.middle-section{
+    flex: 1;
+}
+.right-section{
+        display: flex;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+}
+
+.feedback-logo,
+.download-logo{
+        cursor: pointer;
+        width: 22px;
+}
+.download-logo{
+    margin-left: 5px;
+}
+.right-section-logo{
+    margin-left: 120px;
+}
+
+.title{
+        font-size: 25px;
+        font-style: italic;
+        font-family: open sans;
+        color: #e05910;
+}
+
+.middle-section{
+    cursor: pointer;
+    text-align: center;
+    border: #e05910 solid 1px;
+    border-radius: 5px;
+    transition: all 0.8s;
+}
+
+.download-button{
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.download-button:hover{
+    color: white;
+    background-color: #e05910;
+    border: white 1px solid;
+}
