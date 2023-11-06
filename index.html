@@ -16,41 +16,80 @@
         *{
             margin: 0;
             padding: 0;
-            background-color: #f1f5f9;
             font-family: Arial;
+        }
+
+        body{
+            background-color: #f1f5f9;
         }
 
         .main-background{
                 display: flex;
-                justify-content: center;
                 margin-top: 45px;
                 width: 100%;
+                 background-color:   #e2e5e8;
+                border-radius: 8px;
         }
         .main-background-child{
-            background-color: #edf1f5;
-            width: 1200px;
+            /* background-color:  #f6f6f6; */
+            background-color: #2f2f2f;
+            padding: 0 35px;
             height: 550px;
+           
             border-radius: 12px;
-            box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.1);
+            box-shadow: 3px 5px 11px 0px rgba(0,0,0,0.1);
+            
             
         }
             .mobile-app{
-                margin-top: 400px;
+                color: #f1f5f9;
+                margin-top: 300px;
                 width: 100%;
                 height: 60px;
                 display: flex;
                 justify-content: center;
+                flex-direction: row;
             }
 
             .project{
-                border: 1px white solid;
+                border: 1px rgb(221, 221, 221) solid;
                 border-radius: 5px;
                 padding: 7px;
-                padding: 7px 30px;
                 margin: 5px;
-                box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
                 height: 1200px;
             }
+
+            .based{
+                margin-top: 30px;
+                font-size: 36px;
+                color: #f1f5f9;
+                text-align: center;
+            }
+
+            .ai{
+                color: #7AC73C;
+                font-size: 40px;
+            }
+
+            .icons{
+                cursor: pointer;
+                margin-top: 15px;
+                color: white;
+                display: flex;
+                justify-content: center;
+            }
+
+          .icons-child{
+                padding: 2px;
+                margin-left: 5px;
+                width: 30px;border-radius: 30px;
+            }
+
+            .icons-child:hover{
+                background-color: #5b5757;
+            }
+
+
         </style>
 </head>
 <body>
@@ -61,20 +100,33 @@
         </div>
 
         <div class="middle-section">
-                <img src="SolarCartLargeLinear.svg" class="cart-logo animate__animated animate__jackInTheBox">
+                <img src="icons/SolarCartLargeLinear.svg" class="cart-logo animate__animated animate__jackInTheBox">
         </div>
 
         <div class="right-section">
-                    <img src="MaterialSymbolsFeedback.svg" class="feedback-logo">
-                   <img src="MaterialSymbolsDownload.svg" class="download-logo">
+                    <img src="icons/MaterialSymbolsFeedback.svg" class="feedback-logo">
+                   <img src="icons/MaterialSymbolsDownload.svg" class="download-logo">
                 <button class="download-button">Download</button>
         </div>
         </div>
 
         <div class="main-background">
             <div class="main-background-child">
+                
+                <div class="based animate__animated animate__fadeInUp">
+                    <span class="ai">Ai</span>
+                    Based App</div>
+
+                <div class="icons animate__animated animate__fadeInUp">
+                    <img src="icons/RiOpenaiFill.svg" class="icons-child">
+                    <img src="icons/TeenyiconsAndroidSolid.svg" class="icons-child" >
+                    <img src="icons/IconamoonProfileCircleBold.svg" title="Create Profile" class="icons-child">
+                    <img src="icons/AntDesignAppstoreOutlined.svg" title="I don't know" class="icons-child">
+                    <img src="icons/MaterialSymbolsDeleteOutline.svg" title="Delete Profile" class="icons-child">
+
+                </div>
                 <div class="mobile-app">
-                   <span class="animate__animated animate__heartBeat">Mobile App</span>
+                   <span class="animate__animated animate__fadeInUp">Mobile App</span>
                 </div>
             </div>
         </div>
